@@ -40,8 +40,7 @@ export default function Profile() {
 
 
       <div className="pt-24 flex flex-col lg:flex-row w-full justify-end" id="profile">
-        {/* Left side - Profile Card */}
-        <Profile_card/>
+         <Profile_card/>
 
         {/* Right side - Content */}
         <div className="w-full lg:w-1/2 min-h-screen p-4 lg:p-8 lg:pr-16">
@@ -174,9 +173,8 @@ export default function Profile() {
       <div className="fixed bottom-4 right-4 lg:bottom-8 lg:right-8 z-50">
         <Button className="bg-indigo-900 hover:bg-indigo-700 text-white"         onClick={handleDownload} >
           <Download className="w-4 h-4 mr-2" />
-          {/* <span className="hidden sm:inline">Download CV</span> */}
-<ShinyText text="Download CV" disabled={false} speed={2} className='custom-class' />
-          <span className="sm:hidden">Download</span>
+          <span className="hidden sm:inline"> <ShinyText text="Download CV" disabled={false} speed={2} className='custom-class' /> </span>
+          <span className="sm:hidden"><ShinyText text="Download" disabled={false} speed={2} className='custom-class' /></span>
         </Button>
       </div>
     </div>
